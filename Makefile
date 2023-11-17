@@ -28,7 +28,6 @@ OBJS = \
 	uart.o\
 	vectors.o\
 	vm.o\
-	# ptetool.o\
 
 # Cross-compiling (e.g., on Mac OS X)
 # TOOLPREFIX = i386-jos-elf
@@ -311,7 +310,7 @@ tar:
 	cp dist/* dist/.gdbinit.tmpl /tmp/xv6
 	(cd /tmp; tar cf - xv6) | gzip >xv6-rev10-uva1.tar.gz  
 
-SUBMIT_FILENAME=isf4rjk.mtn7vez.lab7.tar.gz
+SUBMIT_FILENAME=isf4rjk.mtn7vez.lab7.pt2.tar.gz
 
 submit:
 	@tar -zcf $(SUBMIT_FILENAME) *.c *.h *.S *.ld Makefile $(wildcard *.txt) $(wildcard *.md) $(EXTRA) $(FILES)
